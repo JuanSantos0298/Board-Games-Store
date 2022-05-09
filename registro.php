@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board Games Store</title>
+    <title>Registro de usuarios</title>
 
     <!--Importaciones de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -40,8 +40,6 @@
     <!-- Implementacion del CSS -->
     <link href="css/signin.css" rel="stylesheet">
 
-    <!--Implementación del SDK de JavaScript para usar la API de Paypal-->
-    <script src="https://www.paypal.com/sdk/js?client-id=AUi2ss7xR07wl21rey1Or02m3AU3mRBZczfeMeT_CBCEUtH1HOjI5S_T71ASbIixVJYBmdwvXbj06on5&currency=MXN"></script>
 
 </head>
 
@@ -49,8 +47,8 @@
     <main class="form-signin">
         <img class="mb-4" src="img/extras/logo.png" alt="" width="72" height="57">
         <h1 class="h2 mb-3 fw-normal">Board Games Store</h1>
-        <form action="validarlogin.php" method="post">
-            <h1 class="h3 mb-3 fw-normal">Inicie sesion</h1>
+        <form action="validarregistro.php" method="post">
+            <h1 class="h3 mb-3 fw-normal">Registro de usuarios</h1>
             <br><br>
             <div class="form-floating">
                 <input type="text" class="form-control" name="usuario" placeholder="Ingrese su nombre de usuario">
@@ -58,21 +56,23 @@
             </div>
             <br>
             <div class="form-floating">
-                <input type="password" class="form-control" name="contraseña" placeholder="Contraseña">
+                <input type="password" class="form-control" name="contraseña" placeholder="Ingrese una contraseña">
                 <label for="floatingPassword">Contraseña</label>
             </div>
 
             <div>
                 <label>
-                    <a href="registro.php">¿No estás registrado? Click aquí</a>
+                    <a href="index.php">¿Ya estás registrado? Inicia sesión aquí</a>
                 </label>
             </div>
             <br>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar sesión</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
-        </form>
-    </main>
 
+            <button class="w-100 btn btn-lg btn-primary" type="submit" name="register">Registrarse</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+
+        </form>
+
+    </main>
 </body>
 
 </html>

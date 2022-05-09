@@ -1,0 +1,9 @@
+main>.container {
+    padding: 3rem 0;
+}
+
+.carousel-inner>.item>img {
+    object-fit: scale-down;
+    height: 12.5vh;
+    width: 50%;
+}
