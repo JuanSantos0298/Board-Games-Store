@@ -3,6 +3,7 @@
 require '../config/database.php';
 require '../config/config.php';
 
+
 $db = new Database();
 $con = $db->conectar();
 
@@ -53,4 +54,6 @@ if (is_array($datos)) {
             }
         }
     }
+
+    json_encode($datos);
 }

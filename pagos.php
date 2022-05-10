@@ -127,7 +127,10 @@ if ($productos != null) {
 
                 </div>
             </div>
-
+            <br><br>
+            <div class="text-center">
+                <a class="btn btn-primary" href="php/factura.php">Obten tu factura</a>
+            </div>
 
         </div>
     </main>
